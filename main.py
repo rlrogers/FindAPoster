@@ -25,7 +25,7 @@ else:
 
 print("Now given that you chose {}, please tell us whether you would like to view posters which either match or compliment your base color of {}.".format(color, color))
 
-mc = ["match", "compliment"]
+
 word = input()
 if word.lower() in mc:
     print('Ok, you would like us to {} posters with your color choice of {}.'.format(word, color))
