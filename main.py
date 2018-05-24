@@ -1,7 +1,7 @@
 #_________________________________________________________________________#
 #importing pre-selected photo poster links
 #_________________________________________________________________________#
-import selection.py *
+# import selection.py
 
 
 #_________________________________________________________________________# 
@@ -39,30 +39,30 @@ else:
 #_________________________________________________________________________# 
 def base_color():
     choice = 0
-    color_primary = ["Red", "Yellow", "Blue"]
+    color_primary = ["Red", "Yellow", "Blue"] 
     color_secondary = ["Green", "Purple", "Orange"]
     color_tertiary01 = ["Vermillion", "Amber", "Chartreuse"]
     color_tertiary02 = ["Teal", "Violet", "Magenta"]
     return choice
     # User decides if color should match or compliment base
-def compliment():
-    if choice is color_primary[e]:
+def compliment(color):
+    if color in color_primary[e]:
         return color_secondary[e]
-    if choice is color_secondary[e]:
+    if color in color_secondary[e]:
         return color_primary[e]
-    if choice is color_tertiary01[e]:
+    if color in color_tertiary01[e]:
         return color_tertiary02[e]
-    if choice is color color_tertiary02[e]:
+    if color in color_tertiary02[e]:
         return color_tertiary01[e]
 # Recommendations of posters are batched based on match or compliment
 def matching():
-    if choice is color_primary[e]:
+    if choice in color_primary[e]:
         return color_primary[e]
-    if choice is color_secondary[e]:
+    if choice in color_secondary[e]:
         return color_secondary[e]
-    if choice is color_tertiary01[e]:
+    if choice in color_tertiary01[e]:
         return color_tertiary01[e]
-    if choice is color color_tertiary02[e]:
+    if choice in color_tertiary02[e]:
         return color_tertiary02[e]
 
 # Link to posters are presented
