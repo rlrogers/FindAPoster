@@ -5,7 +5,7 @@ END=" \#\#\# \033[0m\n"
 
 HOST=0.0.0.0
 PORT=8080
-PROJECT_NAME=website
+PROJECT_NAME=color_picker
 PYTHONPATH=$(PROJECT_NAME)
 DJANGO_SETTINGS=$(PROJECT_NAME).settings.base
 
