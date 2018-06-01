@@ -1,0 +1,163 @@
+html{
+    font-family: "sans-serif;
+}
+
+body{
+    margin: 5%;
+    height: 100%;
+    word-wrap: break-word;
+}
+
+.opener{
+    margin-top: 40px;
+    text-align: left;
+    background: linear-gradient(45deg, #333343, #333333);
+    color: white;
+    padding: 5%;
+}
+
+.opener h1{
+    font-size: 50px;
+    color: white;
+}
+
+.match_comp{
+    margin-top: 25px;
+    padding: 5px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #333343;
+}
+
+.box{ 
+  height: 100px;
+  width: 40px;
+}
+
+.selection {
+    width: 900px;
+    height: 300px;
+}
+
+.choices{
+    padding: 50px;
+    border: 15px solid #333343;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.choices p {
+    text-align: center;
+    margin-top: 7%;
+}
+
+/*Color Choices*/
+
+#red{
+    background: linear-gradient(45deg, #af1212 , #e34234 );
+}
+
+#vermilion{
+
+    background: linear-gradient(to right, #e34234 , orange );
+}
+
+#orange{
+    background: linear-gradient(to right, orange, #FFC200) ;
+}
+
+#amber{
+    background: linear-gradient(to right, #FFC200, yellow) ;
+}
+
+#yellow{
+    background: linear-gradient(45deg, yellow, #e5df0c) ;
+}
+
+#chartreuse{
+    background: linear-gradient(to right, chartreuse, green);
+}
+
+#green{
+    background: linear-gradient(45deg, #0aa026, teal) ;
+}
+
+#teal{
+    background: linear-gradient(to right, teal, blue) ;
+}
+
+#blue{
+    background: linear-gradient(45deg, #0753db, #0eb3c4) ;
+}
+
+#violet{
+    background: linear-gradient(to right, violet, purple);
+}
+
+#purple{
+    background: linear-gradient(to right, purple, magenta);
+}
+
+#magenta{
+    background: linear-gradient(to right, magenta, red);
+}
+
+
+/*Color Choices TEXT*/
+
+#red p{
+    color: black;
+    
+
+
+}
+
+#vermilion p{
+    color: black;
+}
+
+#orange p{
+    color: black;
+}
+
+#amber p{
+    color: black;
+}
+
+#yellow p{
+    
+    color: black;
+   
+    
+}
+
+#chartreuse p{
+    color: black;
+}
+
+#green p{
+    color: white;
+}
+
+#teal p{
+    color: black;
+}
+
+#blue p{
+    color: black;
+}
+
+#violet p{
+    color: black;
+}
+
+#purple p{
+    color: black;
+}
+
+#magenta p{
+    color: black;
+}
+
+
