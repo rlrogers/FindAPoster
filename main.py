@@ -16,9 +16,17 @@ from constant import *
 
 
 def get_poster(color):
-    for category, colors in posters_to_present.items():
+    for category, colors in POSTERS_BY_COLOR.items():
         if color in colors: 
             return colors[color]
     raise ValueError("You really messed up. Please pick accordingly.")
-print(get_poster('yellow'))
 
+print(get_poster('magenta'))
+
+"""
+color_primary = ["Red", "Yellow", "Blue"]
+color_secondary = ["Green", "Purple", "Orange"]
+color_tertiary01 = ["Vermillion", "Amber", "Chartreuse"]
+color_tertiary02 = ["Teal", "Violet", "Magenta"]
+
+"""

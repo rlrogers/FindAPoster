@@ -11,10 +11,5 @@ COLOR_TEAL = "teal"
 COLOR_VIOLET = "violet"
 COLOR_MAGENTA = "magenta"
 
-PRIMARY = []
-SECONDARY = []
-TERTIARY_01 = []
-TERTIARY_02 = []
-
 MATCH = "match"
 COMPLEMENT = "complement"
