@@ -14,19 +14,45 @@ from constant import *
 """The user will pick a base color and choose whether to be presented with posters
     which either match or complement the base color from the selections.py file."""
 
+COMPLEMENT = {
+    COLOR_RED: COLOR_GREEN,
+    COLOR_YELLOW: COLOR_PURPLE,
+    COLOR_BLUE: COLOR_ORANGE,
+    COLOR_GREEN: COLOR_RED,
+    COLOR_PURPLE: COLOR_YELLOW,
+    COLOR_ORANGE: COLOR_BLUE,
+    COLOR_VERMILION: COLOR_TEAL,
+    COLOR_AMBER: COLOR_VIOLET, 
+    COLOR_CHARTREUSE: COLOR_MAGENTA,
+    COLOR_TEAL: COLOR_VERMILION,
+    COLOR_VIOLET: COLOR_AMBER,
+    COLOR_MAGENTA: COLOR_CHARTREUSE
+    }
 
-def get_poster(color):
-    for category, colors in POSTERS_BY_COLOR.items():
-        if color in colors: 
-            return colors[color]
-    raise ValueError("You really messed up. Please pick accordingly.")
 
-print(get_poster('magenta'))
+def get_matching_poster(color):
+    results = POSTERS_BY_COLOR.get(color)
+    if not results: 
+	        raise ValueError("You really messed up. Please pick accordingly.")
+    return results
 
-"""
-color_primary = ["Red", "Yellow", "Blue"]
-color_secondary = ["Green", "Purple", "Orange"]
-color_tertiary01 = ["Vermillion", "Amber", "Chartreuse"]
-color_tertiary02 = ["Teal", "Violet", "Magenta"]
 
-"""
+
+def get_complementing_poster(color):
+    """Reassign color value to be complement"""  
+    color = COMPLEMENT[color]
+    results = POSTERS_BY_COLOR.get(color)
+    if not results: 
+            raise ValueError("You really messed up. Please pick accordingly.")
+    return results
+    
+
+"""Tests"""
+
+print(get_matching_poster("blue"))
+
+print(get_complementing_poster("red"))
+
+
+
+	    
