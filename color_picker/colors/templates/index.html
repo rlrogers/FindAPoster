@@ -4,7 +4,7 @@
     <title>Color Matching Poster</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/custom.css">
 </head>
 <body>
     <div class = "opener container">
@@ -26,55 +26,84 @@
     <div class = "container choices">
        <h2>For my base color I would like:</h2>
         <div class ="row">
-                <div class= "col-md-4" id= "red">
+            <!-- <button type="button" class="btn btn-primary">Primary</button> -->
+                <div class="col-md-4">
+                    <button type="button" class= "btn btn-primary" id= "red">
                     <p>RED</p>    
+                    </button>
                 </div>
-                <div class= "col-md-4" id= "blue">
-                    <p>BLUE</p>    
+                <div class= "col-md-4">
+                    <button type="button" class= 'btn btn-primary' id= "blue">
+                    <p>BLUE</p>
+                    </button>
                 </div>
-                <div class= "col-md-4" id= "yellow">
-                    <p>YELLOW</p>    
-                </div>
-            </div>
-            <div class ="row">
-                <div class= "col-md-4" id= "green">
-                    <p>GREEN</p>    
-                </div>
-                <div class= "col-md-4" id= "purple">
-                    <p>PURPLE</p>    
-                </div>
-                <div class= "col-md-4" id= "orange">
-                    <p>ORANGE</p>    
+                <div class= "col-md-4">
+                    <button type="button" class= "btn btn-primary" id= "yellow">
+                    <p>YELLOW</p>
+                    </button>
                 </div>
             </div>
             <div class ="row">
-                <div class= "col-md-4" id= "vermilion">
-                    <p>VERMILION</p>    
+                <div class= "col-md-4">
+                    <button type="button" class= "btn btn-primary" id= "green">
+                    <p>GREEN</p>
+                    </button>
                 </div>
-                <div class= "col-md-4" id= "amber">
-                    <p>AMBER</p>    
+                <div class= "col-md-4">
+                    <button type="button" class= "btn btn-primary" id= "purple">
+                    <p>PURPLE</p>
+                    </button>
                 </div>
-                <div class= "col-md-4" id= "chartreuse">
-                    <p>CHARTREUSE</p>    
+                <div class= "col-md-4">
+                    <button type="button" class="btn btn-primary" id="orange">
+                    <p>ORANGE</p>
+                    </button>
                 </div>
             </div>
             <div class ="row">
-                <div class= "col-md-4" id= "teal">
-                    <p>TEAL</p>    
+                <div class= "col-md-4">
+                    <button type="button" class="btn btn-primary" id="vermilion">
+                    <p>VERMILION</p>
+                    </button>
                 </div>
-                <div class= "col-md-4" id= "violet">
-                    <p>VIOLET</p>    
+                <div class= "col-md-4">
+                    <button type="button" class="btn btn-primary" id="amber">
+                    <p>AMBER</p>
+                    </button>
                 </div>
-                <div class= "col-md-4" id= "magenta">
-                    <p>MAGENTA</p>    
+                <div class= "col-md-4">
+                    <button type="button" class="btn btn-primary" id="chartreuse">
+                    <p>CHARTREUSE</p>
+                    </button>
+                </div>
+            </div>
+            <div class ="row">
+                <div class= "col-md-4">
+                    <button type="button" class="btn btn-primary" id="teal">
+                    <p>TEAL</p>
+                    </button>
+                </div>
+                <div class= "col-md-4">
+                    <button type="button" class="btn btn-primary" id="violet">
+                    <p>VIOLET</p>
+                    </button>
+                </div>
+                <div class= "col-md-4">
+                    <button type="button" class="btn btn-primary" id="magenta">
+                    <p>MAGENTA</p>
+                    </button>
                 </div>
             </div>
     <div class = "row match_comp">
         <div class = "col-md-6 border" id= "match">
+            <button type="button" class="btn btn-dark">
             <h3>MATCH</h3>
+            </button>
         </div>
         <div class = "col-md-6 border" id= "match">
+            <button type="button" class="btn btn-dark">
             <h3>COMPLEMENT</h3>
+            </button>
         </div>
     </div>
     </div>
