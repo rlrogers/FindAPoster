@@ -1,0 +1,1 @@
+web: gunicorn color_picker.wsgi --log-file -
