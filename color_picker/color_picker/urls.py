@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from colors import views
+from color_picker import settings
 
 
 urlpatterns = [
