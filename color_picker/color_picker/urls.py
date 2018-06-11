@@ -19,8 +19,22 @@ from colors import views
 from color_picker import settings
 
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    
+    path( 'red_posters', views.red),
+    path( 'yellow_posters/', views.yellow ),
+    path( 'blue_posters', views.blue),
+    path( 'green_posters', views.green),
+    path( 'purple_posters', views.purple),
+    path( 'orange_posters', views.orange),
+    path( 'vermilion_posters', views.vermilion),
+    path( 'amber_posters', views.amber),
+    path( 'chartreuse_posters', views.chartreuse),
+    path( 'teal_posters', views.teal),
+    path( 'violet_posters', views.violet),
+    path( 'magenta_posters', views.magenta),
     # Always leave the index url at the bottom
     path('', views.index),
 ]
