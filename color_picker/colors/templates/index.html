@@ -22,96 +22,48 @@
         </ol>
     </div>
     
-            
+    {% if error %}
+    <div class="container" style='color: red'>
+        <div class="row">
+            <p>You must select a color to process.... CHANGE ME, FIX ME</p>
+        </div>
+    </div>
+    {% endif %}
     <div class = "container choices">
        <h2>For my base color I would like:</h2>
-        <form class='' action='/index/' method='post'>
-            <div class ="row">
-            <!-- <button type="button" class="btn btn-primary">Primary</button> -->
-            
-                <div class="form-group col-md-4">
-                    <button type="button" class= "btn form-group" id= "red">
-                    <p>RED</p>    
-                    </button>
+        <form class='' action='' method='post'>
+            {% csrf_token %}
+            {% for colors in colors_grouped %}
+                <div class ="row">
+                {% for color in colors %}
+                    {% if color %}
+                    <div class="form-group col-md-4">
+                        <input type="checkbox" id='check-{{color}}' class='chk-btn' name="color-selected" value="{{color}}" />
+                        <label for='check-{{color}}' id="{{color}}">{{color.upper}}</label>
+                    </div>
+                    {% endif %}
+                {% endfor %}
                 </div>
-                <div class= "form-group col-md-4">
-                    <button type="button" class= 'btn form-group' id= "blue">
-                    <p>BLUE</p>
-                    </button>
-                </div>
-                <div class= "form-group col-md-4">
-                    <button type="button" class= "btn form-group" id= "yellow">
-                    <p>YELLOW</p>
-                    </button>
-                </div>
-            </div>
-            <div class ="row">
-                <div class= "form-group col-md-4">
-                    <button type="button" class= "btn form-group" id= "green">
-                    <p>GREEN</p>
-                    </button>
-                </div>
-                <div class= "form-group col-md-4">
-                    <button type="button" class= "btn form-group" id= "purple">
-                    <p>PURPLE</p>
-                    </button>
-                </div>
-                <div class= "form-group col-md-4">
-                    <button type="button" class="btn form-group" id="orange">
-                    <p>ORANGE</p>
-                    </button>
-                </div>
-            </div>
-            <div class ="row">
-                <div class= "form-group col-md-4">
-                    <button type="button" class="btn form-group" id="vermilion">
-                    <p>VERMILION</p>
-                    </button>
-                </div>
-                <div class= "form-group col-md-4">
-                    <button type="button" class="btn form-group" id="amber">
-                    <p>AMBER</p>
-                    </button>
-                </div>
-                <div class= "form-group col-md-4">
-                    <button type="button" class="btn form-group" id="chartreuse">
-                    <p>CHARTREUSE</p>
-                    </button>
-                </div>
-            </div>
-            <div class ="row">
-                <div class= "form-group col-md-4">
-                    <button type="button" class="btn form-group" id="teal">
-                    <p>TEAL</p>
-                    </button>
-                </div>
-                <div class= "form-group col-md-4">
-                    <button type="button" class="btn form-group" id="violet">
-                    <p>VIOLET</p>
-                    </button>
-                </div>
-                <div class= "form-group col-md-4">
-                    <button type="button" class="btn form-group" id= "magenta">MAGENTA</p>
-                    </button>
-                </div>
-            </div>
+            {% endfor %}
             <div class = "row match_comp">
                 <div class = "form-group col-md-6 border" id= "match">
-                    <button type="button" class="btn btn-dark">
+                    <button type="submit" class="btn btn-dark" name='selection-option' value='match'>
                     <h3>MATCH</h3>
                     </button>
                 </div>
                 <div class = "form-group col-md-6 border" id= "match">
-                    <button type="button" class="btn btn-dark">
+                    <button type="submit" class="btn btn-dark" name='selection-option' value='complement'>
                     <h3>COMPLEMENT</h3>
                     </button>
                 </div>
             </div>
+            {% comment %}
             <div class = "container">
-                <button type="button" class="form-group btn btn-secondary btn-lg btn-block" id ="submit">
+                <button type="button" class="form-group btn btn-secondary btn-lg btn-block" id="submit">
                 <h3>Submit</h3>
                 </button>
             </div>
+            {% endcomment %}
         </form>
     </div>
 </body>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>Color Matching Poster</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/custom.css">
+</head>
+<body>
+    <div class = "opener container">
+        <h1>MATCH OR COMPLEMENT</h1>
+        <h2>Welcome to the poster project!</h2>
+        <p></p>
+        <ol>
+            1) Pick your base color.
+        </ol>
+        <ol>
+            2) Choose if you would like your posters to either match or complement your base color.
+        </ol>
+        <ol>
+            3) Browse through poster selection. 
+        </ol>
+    </div>
+    
+            
+    <div class = "container choices">
+       <h2>For my base color I would like:</h2>
+        <form class='' action='/index/' method='post'>
+            <div class ="row">
+            <!-- <button type="button" class="btn btn-primary">Primary</button> -->
+            
+                <div class="form-group col-md-4">
+                    <button type="button" class= "btn form-group" id= "red">
+                    <p>RED</p>    
+                    </button>
+                </div>
+                <div class= "form-group col-md-4">
+                    <button type="button" class= 'btn form-group' id= "blue">
+                    <p>BLUE</p>
+                    </button>
+                </div>
+                <div class= "form-group col-md-4">
+                    <button type="button" class= "btn form-group" id= "yellow">
+                    <p>YELLOW</p>
+                    </button>
+                </div>
+            </div>
+            <div class ="row">
+                <div class= "form-group col-md-4">
+                    <button type="button" class= "btn form-group" id= "green">
+                    <p>GREEN</p>
+                    </button>
+                </div>
+                <div class= "form-group col-md-4">
+                    <button type="button" class= "btn form-group" id= "purple">
+                    <p>PURPLE</p>
+                    </button>
+                </div>
+                <div class= "form-group col-md-4">
+                    <button type="button" class="btn form-group" id="orange">
+                    <p>ORANGE</p>
+                    </button>
+                </div>
+            </div>
+            <div class ="row">
+                <div class= "form-group col-md-4">
+                    <button type="button" class="btn form-group" id="vermilion">
+                    <p>VERMILION</p>
+                    </button>
+                </div>
+                <div class= "form-group col-md-4">
+                    <button type="button" class="btn form-group" id="amber">
+                    <p>AMBER</p>
+                    </button>
+                </div>
+                <div class= "form-group col-md-4">
+                    <button type="button" class="btn form-group" id="chartreuse">
+                    <p>CHARTREUSE</p>
+                    </button>
+                </div>
+            </div>
+            <div class ="row">
+                <div class= "form-group col-md-4">
+                    <button type="button" class="btn form-group" id="teal">
+                    <p>TEAL</p>
+                    </button>
+                </div>
+                <div class= "form-group col-md-4">
+                    <button type="button" class="btn form-group" id="violet">
+                    <p>VIOLET</p>
+                    </button>
+                </div>
+                <div class= "form-group col-md-4">
+                    <button type="button" class="btn form-group" id= "magenta">MAGENTA</p>
+                    </button>
+                </div>
+            </div>
+            <div class = "row match_comp">
+                <div class = "form-group col-md-6 border" id= "match">
+                    <button type="submit" class="btn btn-dark">
+                    <h3>MATCH</h3>
+                    </button>
+                </div>
+                <div class = "form-group col-md-6 border" id= "match">
+                    <button type="submit" class="btn btn-dark">
+                    <h3>COMPLEMENT</h3>
+                    </button>
+                </div>
+            </div>
+            {% comment %}
+            <div class = "container">
+                <button type="button" class="form-group btn btn-secondary btn-lg btn-block" id ="submit">
+                <h3>Submit</h3>
+                </button>
+            </div>
+            {% endcomment %}
+        </form>
+    </div>
+</body>
+</html>
