@@ -5,7 +5,7 @@ from django.http import HttpResponse
 
 # from colors.main import get_matching_poster
 
-HOMEPAGE_COLORS = ['red', 'blue', 'yellow', 'green', 'purple']
+HOMEPAGE_COLORS = ['red', 'blue', 'yellow', 'green', 'purple', 'orange', 'vermilion', 'amber', 'chartreuse', 'teal', 'violet', 'magenta', ]
 
 
 def grouper(iterable, n, fillvalue=None):
