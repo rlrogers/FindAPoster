@@ -3,9 +3,10 @@ from itertools import zip_longest
 from django.shortcuts import render
 from django.http import HttpResponse
 
-# from colors.main import get_matching_poster
+from main import get_matching_poster
+from selection import *
 
-HOMEPAGE_COLORS = ['red', 'blue', 'yellow', 'green', 'purple', 'orange', 'vermilion', 'amber', 'chartreuse', 'teal', 'violet', 'magenta', ]
+HOMEPAGE_COLORS = ['red', 'blue', 'yellow', 'green', 'purple', 'orange', 'vermilion', 'amber', 'chartreuse', 'teal', 'violet', 'magenta']
 
 
 def grouper(iterable, n, fillvalue=None):
@@ -34,36 +35,19 @@ def index(request):
     color_selected = request.POST['color-selected']
     # Starts of Richard's code:
     # he'll generate this list dinamically based on the color selected by the user
+    def get_matching_poster(color):
+        results = POSTERS_BY_COLOR.get(color)
+        if not results: 
+	            raise ValueError("You really messed up. Please pick accordingly.")
+        return results
+    
     # for now, i'm just mocking a few as an example:
     posters = [
         "https://www.zazzle.com/sugar_coded_pink_abstract_art_poster_print-228589031082563954",
         "https://www.zazzle.com/sunset_behind_seattle_skyline_from_kerry_park_poster-228488875435299973",
         "https://www.zazzle.com/two_pink_flamingos_on_green_lake_k_turnbull_art_poster-228078145972304476",
     ]
-    """
-    #Post Request Data
-    color = {
-        'red':request.POST['red'],
-        'yellow':request.POST['yellow'],
-        'blue':request.POST['blue'],
-        'green':request.POST['green'],
-        'purple':request.POST['purple'],
-        'orange':request.POST['orange'],
-        'vermilion':request.POST['vermilion'],
-        'amber':request.POST['amber'],
-        'chartreuse':request.POST['chartreuse'],
-        'teal':request.POST['teal'],
-        'violet':request.POST['violet'],
-        'magenta':request.POST['magenta'],
-    }
     
-    #Dynamic
-    color = []
-    
-    for key, value in request.POST:
-        if value == True:
-            color.append(key)
-    """
     return render(request, 'poster-page.html', {
         'color_selected': color_selected,
         'posters': posters
