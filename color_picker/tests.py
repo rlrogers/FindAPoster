@@ -33,7 +33,7 @@ assert(get_complementing_poster("violet"))
 assert(get_complementing_poster("magenta"))
 
 
-print("OHHHH YEAH! -Koolaid Man")
+print("OHHHH YEAH!! -Koolaid Man")
 
 
 
