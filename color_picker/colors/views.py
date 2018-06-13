@@ -1,5 +1,4 @@
 from itertools import zip_longest
-
 from django.shortcuts import render
 from django.http import HttpResponse
 
