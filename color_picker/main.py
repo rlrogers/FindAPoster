@@ -47,12 +47,6 @@ def get_complementing_poster(color):
     return results
     
 
-"""Tests"""
-
-print(get_matching_poster("blue"))
-
-print(get_complementing_poster("red"))
-
 
 
 	    
