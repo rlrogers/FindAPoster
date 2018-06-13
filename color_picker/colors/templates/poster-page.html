@@ -9,14 +9,18 @@
         <link rel="stylesheet" type="text/css" href="/static/css/custom.css">
     </head>
     <body>
-        <h1>Here are the posters which best suit your chosen base color!</h1>
-        <b>You selected: {{ color_selected }}</b>
-        <h2>These are good posters based on your choice:</h2>
-        <ul>
-        {% for poster in posters %}
-            <li><a href="{{poster}}" target='_blank'>{{poster}}</a></li>
-            
-        {% endfor %}
-        </ul>
+        
+        <div class = "opener container">
+            <h1>Here are the posters which best suit your chosen base color!</h1>
+        </div>
+        <div class = "opener container">
+            <h2>You selected to {{ selection_option }} the color: {{ color_selected }}</h2>
+            <h3>These are good posters based on your choice:</h3>
+            <ul>
+            {% for poster in posters %}
+                <li><a href="{{poster}}" target='_blank'>{{poster}}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
     </body>
 </html>

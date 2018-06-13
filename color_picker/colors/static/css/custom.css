@@ -21,6 +21,18 @@ body{
     color: white;
 }
 
+.box{ 
+  height: 130px;
+  width: 130px;
+  border-radius: 5%;
+  
+  
+}
+
+.box p{
+    padding-top: 30%;
+}
+
 .match_comp{
     margin-top: 25px;
     padding: 5px;
@@ -29,10 +41,7 @@ body{
     color: #333343;
 }
 
-.box{ 
-  height: 100px;
-  width: 40px;
-}
+
 
 .selection {
     width: 900px;
@@ -47,6 +56,7 @@ body{
     vertical-align: middle;
 }
 
+
 .choices p {
     text-align: center;
     margin-top: 7%;
@@ -54,9 +64,10 @@ body{
 
 /*Color Choices*/
 
-#red{
+#red {
     background: linear-gradient(45deg, #af1212 , #e34234 );
 }
+
 
 #vermilion{
 
@@ -106,58 +117,144 @@ body{
 
 /*Color Choices TEXT*/
 
+
 #red p{
     color: black;
-    
-
-
 }
+#red p:hover{
+    color: white;
+    transition-timing-function:  color ease-in-out;
+}
+
+
 
 #vermilion p{
     color: black;
 }
 
+#vermilion p:hover{
+    color: white;
+    transition-timing-function:  color ease-in-out;
+}
+
+  
+  
+  
 #orange p{
     color: black;
 }
+#orange p:hover{
+    color: white;
+    transition-timing-function:  color ease-in-out;
+}
+
 
 #amber p{
     color: black;
 }
+#amber p:hover{
+    color: white;
+    transition-timing-function:  color ease-in-out;
+}
+
 
 #yellow p{
     
     color: black;
-   
-    
 }
+#yellow p:hover{
+    color: white;
+    transition-timing-function:  color ease-in-out;
+}
+
 
 #chartreuse p{
     color: black;
 }
+#chartreuse p:hover{
+    color: white;
+    transition-timing-function:  color ease-in-out;
+}
+
 
 #green p{
-    color: white;
+    color: black;
 }
+#green p:hover{
+    color: white;
+    transition-timing-function:  color ease-in-out;
+}
+
+
+#chartreuse p:hover{
+    color: white;
+    transition-timing-function:  color ease-in-out;
+}
+#chartreuse p:hover{
+    color: white;
+    transition-timing-function:  color ease-in-out;
+}
+
 
 #teal p{
     color: black;
 }
+#teal p:hover{
+    color: white;
+    transition-timing-function:  color ease-in-out;
+}
+
+
 
 #blue p{
     color: black;
 }
+#blue p:hover{
+    color: white;
+    transition-timing-function:  color ease-in-out;
+}
+
+
 
 #violet p{
     color: black;
 }
+#violet p:hover{
+    color: white;
+    transition-timing-function:  color ease-in-out;
+}
+
+
 
 #purple p{
     color: black;
 }
+#purple p:hover{
+    color: white;
+    transition-timing-function:  color ease-in-out;
+}
+
 
 #magenta p{
     color: black;
 }
+#magenta p:hover{
+    color: white;
+    transition-timing-function:  color ease-in-out;
+}
 
+/*Output*/
 
+.container ul{
+    margin: 50px;
+}
+
+.container ul li{
+    margin: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+.container a{
+    color: white;
+}

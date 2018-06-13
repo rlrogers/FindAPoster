@@ -40,26 +40,22 @@ def index(request):
         if not results: 
 	            raise ValueError("You really messed up. Please pick accordingly.")
         return results
-    
-    # for now, i'm just mocking a few as an example:
-    # posters = [
-    #     "https://www.zazzle.com/sugar_coded_pink_abstract_art_poster_print-228589031082563954",
-    #     "https://www.zazzle.com/sunset_behind_seattle_skyline_from_kerry_park_poster-228488875435299973",
-    #     "https://www.zazzle.com/two_pink_flamingos_on_green_lake_k_turnbull_art_poster-228078145972304476",
-    # ]
     posters = []
     
     if selection_option == 'match':
+        selection_option = 'match'
         answer = POSTERS_BY_COLOR.get(color_selected)
     
     elif selection_option == 'complement':
+        selection_option = 'complement'
         answer = POSTERS_BY_COLOR.get(COMPLEMENT[color_selected])
             
             
     
     return render(request, 'poster-page.html', {
         'color_selected': color_selected,
-        'posters': answer
+        'posters': answer,
+        'selection_option': selection_option
     })
     
 def results(request):
