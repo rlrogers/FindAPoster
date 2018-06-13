@@ -2,7 +2,7 @@
 #importing pre-selected photo poster links
 #_________________________________________________________________________#
 from selection import *
-from constant import *
+from constant import * 
 #_________________________________________________________________________# 
 # User selects base color
 #Options: Red, Vermilion, Orange, Amber, Yellow, Chartreuse, Green, Teal, Blue, Violet, Purple, Magenta
@@ -46,12 +46,6 @@ def get_complementing_poster(color):
             raise ValueError("You really messed up. Please pick accordingly.")
     return results
     
-
-"""Tests"""
-
-print(get_matching_poster("blue"))
-
-print(get_complementing_poster("red"))
 
 
 
