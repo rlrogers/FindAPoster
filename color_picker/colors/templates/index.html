@@ -33,18 +33,20 @@
        <h2>For my base color I would like:</h2>
         <form class='' action='' method='post'>
             {% csrf_token %}
-            {% for colors in colors_grouped %}
+            
+            {% for colors_group in colors_grouped %}
                 <div class ="row">
-                {% for color in colors %}
+                {% for color in colors_group %}
                     {% if color %}
                     <div class="form-group col-md-4">
-                        <input type="checkbox" id='check-{{color}}' class='chk-btn' name="color-selected" value="{{color}}" />
+                        <input type="radio" id='check-{{color}}' class='chk-btn' name="color-selected" value="{{color}}" />
                         <label for='check-{{color}}' id="{{color}}">{{color.upper}}</label>
                     </div>
                     {% endif %}
                 {% endfor %}
                 </div>
             {% endfor %}
+            
             <div class = "row match_comp">
                 <div class = "form-group col-md-6 border" id= "match">
                     <button type="submit" class="btn btn-dark" name='selection-option' value='match'>
