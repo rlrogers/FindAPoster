@@ -12,7 +12,7 @@ Fork, clone and run in virtual env.
 
 #
 Django deployed on heroku. 
-
+https://color-poster-project.herokuapp.com/
 #
 Authors: Richard L. Rogers / Jordan Winfrey
 #
